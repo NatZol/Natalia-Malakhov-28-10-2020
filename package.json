@@ -1,0 +1,13 @@
+{
+    "name": "test_assignment",
+    "version": "1.0.0",
+    "description": "Test assignment for Herolo",
+    "scripts": {
+        "test": "testcafe"
+    },
+    "author": "Natalia Malakhov",
+    "devDependencies": {
+        "testcafe": "^1.9.4",
+        "testcafe-react-selectors": "^4.0.0"
+    }
+}

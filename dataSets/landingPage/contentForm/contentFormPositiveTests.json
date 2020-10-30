@@ -1,0 +1,23 @@
+[
+    {
+        "name": "PositiveTest #01 - all fields are filled with valid values",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John"
+            },
+            {
+                "name": "email",
+                "value": "john@example.com"
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567"
+            },
+            {
+                "name": "company",
+                "value": "John Inc"
+            }
+        ]
+    }
+]

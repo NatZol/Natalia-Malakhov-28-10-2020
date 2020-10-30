@@ -1,0 +1,327 @@
+[
+    {
+        "name": "NegativeTest #01 - email is missing",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "",
+                "errorMessage": "שדה אימייל הוא שדה חובה"
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #02 - telephone is missing",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "",
+                "errorMessage": "שדה טלפון הוא שדה חובה"
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #03 - name is missing",
+        "fields": [
+            {
+                "name": "name",
+                "value": "",
+                "errorMessage": "שדה שם הוא שדה חובה"
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #04 - company is missing",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "",
+                "errorMessage": "שדה חברה הוא שדה חובה"
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #05 - invalid telephone (with characters)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "050123456n",
+                "errorMessage": "מספר טלפון לא חוקי"
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #06 - invalid telephone (too short)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "050123456",
+                "errorMessage": "מספר טלפון לא חוקי"
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #07 - invalid telephone (too long)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "05012345678",
+                "errorMessage": "מספר טלפון לא חוקי"
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #08 - invalid telephone (1st sign is wrong)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "1501234567",
+                "errorMessage": "מספר טלפון לא חוקי"
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #09 - invalid telephone (2nd sign is wrong)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.com",
+                "errorMessage": ""
+            },
+            {
+                "name": "telephone",
+                "value": "0401234567",
+                "errorMessage": "מספר טלפון לא חוקי"
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #10 - invalid email (without @ and domain)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "johnexamplecom",
+                "errorMessage": "כתובת אימייל לא חוקית"
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #11 - invalid email (without domain)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@examplecom",
+                "errorMessage": "כתובת אימייל לא חוקית"
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #12 - invalid email (without @)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "johnexample.com",
+                "errorMessage": "כתובת אימייל לא חוקית"
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    },
+    {
+        "name": "NegativeTest #13 - invalid email (too short domain)",
+        "fields": [
+            {
+                "name": "name",
+                "value": "John",
+                "errorMessage": ""
+            },
+            {
+                "name": "email",
+                "value": "john@example.c",
+                "errorMessage": "כתובת אימייל לא חוקית"
+            },
+            {
+                "name": "telephone",
+                "value": "0501234567",
+                "errorMessage": ""
+            },
+            {
+                "name": "company",
+                "value": "John Inc",
+                "errorMessage": ""
+            }
+        ]
+    }
+]
