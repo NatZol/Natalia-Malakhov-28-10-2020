@@ -43,9 +43,5 @@ defaultFormNegativeTests.forEach(currentCase => {
         await landingPage.footerForm.submitClick();
 
         await landingPage.footerForm.verifyFieldErrors(currentCase.fields);
-
-        for (const field of currentCase.fields) {
-            await landingPage.footerForm[field.name].isErrorValid(field.errorMessage);
-        }
     });
 });
